@@ -17,8 +17,8 @@
         android:textColor="@color/bright_foreground_disabled_material_dark"
         android:textColorHint="@color/bright_foreground_disabled_material_dark"
         android:id="@+id/email"
-        android:layout_above="@+id/password"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/password" />
 
     <EditText
         android:layout_width="250dp"
@@ -30,28 +30,27 @@
         android:textColor="@color/bright_foreground_disabled_material_dark"
         android:textColorHint="@color/bright_foreground_disabled_material_dark"
         android:id="@+id/password"
-        android:layout_above="@+id/registro"
-        android:layout_alignStart="@+id/email"
-        android:layout_marginBottom="148dp" />
+        android:layout_above="@+id/login"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ingresar"
         android:id="@+id/login"
-        android:layout_marginTop="57dp"
-        android:layout_alignTop="@+id/password"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:onClick="registro"
-        android:textColor="@color/bright_foreground_disabled_material_dark"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="¿No posees una cuenta?, creala aquí"
-        android:id="@+id/registro"
+        android:id="@+id/button"
+        android:background="@android:color/transparent"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:onClick="registro"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
